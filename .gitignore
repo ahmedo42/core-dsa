@@ -1,4 +1,9 @@
 .vscode
+__pycache__/
+*$py.class
+*.egg
+*.egg-info/
+
 # Prerequisites
 *.d
 
