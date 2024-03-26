@@ -4,7 +4,7 @@
 int main(int argc, char const *argv[])
 {
     // test array creation
-    auto test_array = da::DynamicArray<int>(5);
+    auto test_array = DynamicArray<int>(5);
     assert(test_array.get_capacity() == 5);
     assert(test_array.get_size() == 0);
 
