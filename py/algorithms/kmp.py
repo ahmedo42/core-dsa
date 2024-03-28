@@ -31,9 +31,6 @@ def kmp(haystack,needle):
             j += 1
 
         else:
-            # mismatch happened
-            # if we're at the first lps we increment the haystack until we find a match
-            # otherwise we 
             if j == 0:
                 i += 1
             else:
