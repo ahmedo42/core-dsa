@@ -1,5 +1,3 @@
-#ifndef DYNAMIC_ARRAY
-#define DYNAMIC_ARRAY
 #include <algorithm>
 #include <memory>
 #include <iostream>
@@ -150,5 +148,3 @@ public:
     return -1;
   }
 };
-
-#endif
