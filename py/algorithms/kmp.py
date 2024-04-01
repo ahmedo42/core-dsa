@@ -17,11 +17,11 @@ def construct_lps(needle):
             i += 1
 
         else:
-            prev_lps = lps[prev_lps-1]
+            prev_lps = lps[prev_lps - 1]
     return lps
 
 
-def kmp(haystack,needle):
+def kmp(haystack, needle):
     i = 0
     j = 0
     lps = construct_lps(needle)
@@ -34,7 +34,7 @@ def kmp(haystack,needle):
             if j == 0:
                 i += 1
             else:
-                j = lps[j-1]
+                j = lps[j - 1]
 
         if j == len(needle):
             return i - len(needle)

@@ -8,7 +8,7 @@ class Trie:
             if c not in curr:
                 curr[c] = {}
             curr = curr[c]
-        curr['*'] = ''
+        curr["*"] = ""
 
     def search(self, word: str) -> bool:
         curr = self.root
@@ -16,10 +16,10 @@ class Trie:
             if c not in curr:
                 return False
             curr = curr[c]
-        return '*' in curr
+        return "*" in curr
 
     def startsWith(self, prefix: str) -> bool:
-        curr = self.root 
+        curr = self.root
         for c in prefix:
             if c not in curr:
                 return False
